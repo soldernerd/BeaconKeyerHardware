@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -643,17 +643,17 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <element name="IC2" library="00VoltageRegulator" package="SOIC8" value="LM2931AD-5.0" x="22.86" y="11.7475"/>
 <element name="LED1" library="00Display" package="LED0805" value="" x="21.9075" y="23.1775"/>
 <element name="LED2" library="00Display" package="LED0805" value="" x="21.9075" y="20.6375"/>
-<element name="R1" library="00Resistor" package="R0805" value="470" x="17.78" y="23.1775" rot="R180"/>
-<element name="R2" library="00Resistor" package="R0805" value="470" x="17.78" y="20.6375" rot="R180"/>
+<element name="R1" library="00Resistor" package="R0805" value="1k" x="17.78" y="23.1775" rot="R180"/>
+<element name="R2" library="00Resistor" package="R0805" value="1k" x="17.78" y="20.6375" rot="R180"/>
 <element name="CON2" library="00Connector" package="100MIL_5X" value="CON_5X100MIL" x="14.9225" y="43.18"/>
 <element name="R3" library="00Resistor" package="R0805" value="10k" x="12.54125" y="35.08375"/>
 <element name="R4" library="00Resistor" package="RTRIM3314G" value="" x="10.16" y="12.3825"/>
 <element name="IC4" library="00Sensor" package="SC70-5" value="LMT86" x="9.8425" y="22.5425" rot="R270"/>
 <element name="C4" library="00Capacitor" package="C0805" value="100n" x="9.8425" y="20.0025" rot="R180"/>
-<element name="CON3" library="00Connector" package="200MIL_6X" value="CON_6X200MIL" x="40.9575" y="22.5425" locked="yes" rot="R270"/>
+<element name="CON1" library="00Connector" package="200MIL_6X" value="CON_6X200MIL" x="40.9575" y="22.5425" locked="yes" rot="R270"/>
 <element name="IC3" library="00Transistor" package="SO16" value="TPL7407" x="23.8125" y="30.7975" rot="R270"/>
 <element name="D1" library="00Diode" package="MINI2-F3-B" value="SCHOTTKYMINI2" x="30.1625" y="18.415" rot="R270"/>
-<element name="R5" library="00Resistor" package="R0805" value="470" x="17.78" y="18.0975" rot="R180"/>
+<element name="R5" library="00Resistor" package="R0805" value="1k" x="17.78" y="18.0975" rot="R180"/>
 <element name="LED3" library="00Display" package="LED0805" value="" x="21.9075" y="18.0975"/>
 <element name="C5" library="00Capacitor" package="C0805" value="100n" x="29.5275" y="26.3525"/>
 </elements>
@@ -744,7 +744,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <via x="24.4475" y="35.2425" extent="1-16" drill="0.6"/>
 <via x="20.6375" y="25.0825" extent="1-16" drill="0.6"/>
 <via x="6.6675" y="25.0825" extent="1-16" drill="0.6"/>
-<contactref element="CON3" pad="6"/>
+<contactref element="CON1" pad="6"/>
 <contactref element="IC3" pad="8"/>
 <contactref element="C5" pad="2"/>
 <via x="27.6225" y="6.985" extent="1-16" drill="0.6"/>
@@ -772,7 +772,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <wire x1="28.575" y1="20.0025" x2="28.575" y2="14.2475" width="0.6096" layer="1"/>
 <wire x1="25.51" y1="13.6525" x2="27.98" y2="13.6525" width="0.6096" layer="1"/>
 <wire x1="27.98" y1="13.6525" x2="28.575" y2="14.2475" width="0.6096" layer="1"/>
-<contactref element="CON3" pad="4"/>
+<contactref element="CON1" pad="4"/>
 <wire x1="40.87" y1="19.915" x2="40.9575" y2="20.0025" width="0.8128" layer="1"/>
 <polygon width="0.1016" layer="1" isolate="0.254" thermals="no">
 <vertex x="42.545" y="21.59"/>
@@ -801,21 +801,21 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <vertex x="42.545" y="28.575"/>
 <vertex x="38.735" y="28.575"/>
 </polygon>
-<contactref element="CON3" pad="3"/>
+<contactref element="CON1" pad="3"/>
 <contactref element="IC3" pad="14"/>
 <contactref element="IC3" pad="13"/>
 <contactref element="IC3" pad="12"/>
 <contactref element="IC3" pad="11"/>
 </signal>
 <signal name="KEY+">
-<contactref element="CON3" pad="2"/>
+<contactref element="CON1" pad="2"/>
 <contactref element="IC3" pad="15"/>
 <wire x1="26.6375" y1="33.9725" x2="34.6075" y2="33.9725" width="0.8128" layer="1"/>
 <wire x1="34.6075" y1="33.9725" x2="38.4175" y2="30.1625" width="0.8128" layer="1"/>
 <wire x1="38.4175" y1="30.1625" x2="40.9575" y2="30.1625" width="0.8128" layer="1"/>
 </signal>
 <signal name="KEY-">
-<contactref element="CON3" pad="1"/>
+<contactref element="CON1" pad="1"/>
 <contactref element="IC3" pad="16"/>
 <wire x1="26.6375" y1="35.2425" x2="40.9575" y2="35.2425" width="0.8128" layer="1"/>
 </signal>
@@ -987,7 +987,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 </signal>
 <signal name="VIN">
 <contactref element="D1" pad="A"/>
-<contactref element="CON3" pad="5"/>
+<contactref element="CON1" pad="5"/>
 <polygon width="0.1016" layer="1" isolate="0.254" thermals="no">
 <vertex x="42.545" y="17.4625"/>
 <vertex x="43.18" y="16.8275"/>

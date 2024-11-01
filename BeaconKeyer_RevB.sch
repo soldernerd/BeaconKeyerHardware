@@ -1866,8 +1866,8 @@ Cermet, abgedichtet nach IP67</description>
 <part name="C1" library="00Capacitor" deviceset="C" device="C0805" value="100n"/>
 <part name="C2" library="00Capacitor" deviceset="C_POLARIZED" device="SMC_C" value="10u 35V"/>
 <part name="C3" library="00Capacitor" deviceset="C_POLARIZED" device="SMC_C" value="22u 16V"/>
-<part name="R1" library="00Resistor" deviceset="RESISTOR" device="R0805" value="470"/>
-<part name="R2" library="00Resistor" deviceset="RESISTOR" device="R0805" value="470"/>
+<part name="R1" library="00Resistor" deviceset="RESISTOR" device="R0805" value="1k"/>
+<part name="R2" library="00Resistor" deviceset="RESISTOR" device="R0805" value="1k"/>
 <part name="LED1" library="00Display" deviceset="LED" device="0805"/>
 <part name="LED2" library="00Display" deviceset="LED" device="0805"/>
 <part name="IC2" library="00VoltageRegulator" deviceset="LM2931*" device="AD-5.0"/>
@@ -1894,10 +1894,10 @@ Cermet, abgedichtet nach IP67</description>
 <part name="GND10" library="00Supply" deviceset="GND" device=""/>
 <part name="GND11" library="00Supply" deviceset="GND" device=""/>
 <part name="P+10" library="00Supply" deviceset="+5V" device=""/>
-<part name="CON3" library="00Connector" deviceset="CON_6X" device="200MIL"/>
+<part name="CON1" library="00Connector" deviceset="CON_6X" device="200MIL"/>
 <part name="IC3" library="00Transistor" deviceset="ULN2003" device="" value="TPL7407"/>
 <part name="D1" library="00Diode" deviceset="SCHOTTKY" device="MINI2"/>
-<part name="R5" library="00Resistor" deviceset="RESISTOR" device="R0805" value="470"/>
+<part name="R5" library="00Resistor" deviceset="RESISTOR" device="R0805" value="1k"/>
 <part name="LED3" library="00Display" deviceset="LED" device="0805"/>
 <part name="C5" library="00Capacitor" deviceset="C" device="C0805" value="100n"/>
 <part name="GND12" library="00Supply" deviceset="GND" device=""/>
@@ -1944,7 +1944,7 @@ Cermet, abgedichtet nach IP67</description>
 <instance part="GND10" gate="1" x="45.72" y="15.24"/>
 <instance part="GND11" gate="1" x="81.28" y="15.24"/>
 <instance part="P+10" gate="1" x="81.28" y="48.26"/>
-<instance part="CON3" gate="G$1" x="20.32" y="157.48" rot="MR270"/>
+<instance part="CON1" gate="G$1" x="20.32" y="157.48" rot="MR270"/>
 <instance part="IC3" gate="G$1" x="182.88" y="73.66"/>
 <instance part="D1" gate="G$1" x="33.02" y="147.32"/>
 <instance part="R5" gate="G$1" x="241.3" y="88.9" rot="R90"/>
@@ -1964,7 +1964,7 @@ Cermet, abgedichtet nach IP67</description>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="40.64" y1="149.86" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="147.32" x2="40.64" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="CON3" gate="G$1" pin="4"/>
+<pinref part="CON1" gate="G$1" pin="4"/>
 <wire x1="22.86" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
 <junction x="40.64" y="149.86"/>
 </segment>
@@ -1991,7 +1991,7 @@ Cermet, abgedichtet nach IP67</description>
 <segment>
 <wire x1="22.86" y1="152.4" x2="38.1" y2="152.4" width="0.1524" layer="91"/>
 <label x="25.4" y="152.4" size="1.778" layer="95"/>
-<pinref part="CON3" gate="G$1" pin="3"/>
+<pinref part="CON1" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="195.58" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
@@ -2015,7 +2015,7 @@ Cermet, abgedichtet nach IP67</description>
 <segment>
 <wire x1="22.86" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <label x="25.4" y="154.94" size="1.778" layer="95"/>
-<pinref part="CON3" gate="G$1" pin="2"/>
+<pinref part="CON1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="195.58" y1="78.74" x2="213.36" y2="78.74" width="0.1524" layer="91"/>
@@ -2027,7 +2027,7 @@ Cermet, abgedichtet nach IP67</description>
 <segment>
 <wire x1="22.86" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
 <label x="25.4" y="157.48" size="1.778" layer="95"/>
-<pinref part="CON3" gate="G$1" pin="1"/>
+<pinref part="CON1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="195.58" y1="81.28" x2="213.36" y2="81.28" width="0.1524" layer="91"/>
@@ -2040,7 +2040,7 @@ Cermet, abgedichtet nach IP67</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="22.86" y1="144.78" x2="30.48" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="144.78" x2="30.48" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="CON3" gate="G$1" pin="6"/>
+<pinref part="CON1" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -2344,7 +2344,7 @@ Cermet, abgedichtet nach IP67</description>
 <net name="VIN" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
-<pinref part="CON3" gate="G$1" pin="5"/>
+<pinref part="CON1" gate="G$1" pin="5"/>
 <wire x1="30.48" y1="147.32" x2="22.86" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
